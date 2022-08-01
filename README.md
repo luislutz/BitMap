@@ -63,6 +63,8 @@ Solder the panel components with the panel already mounted on them to make sure 
 
 
 
+
+
 Calibraton:
 
 there are 6 calibrating Trimmers in total:
