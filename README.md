@@ -2,7 +2,7 @@
 Multifunction Eurorack Module with 8 Bit parallel ADC and DAC in the Heart
 
 
-##Features and Functions:
+## Features and Functions:
 
 Conversion of analog voltage in 8 Bit digital value
 Possibility of swapping individual bits and switching them off manually, 
