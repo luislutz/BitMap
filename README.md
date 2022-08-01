@@ -41,3 +41,14 @@ Distortion (hardclipping at 10vpp)
 Noise source (9 times digital noise with different rates and one 8 bit white noise) 
 Compatible with Leibniz system from Xaoc!
 
+
+Building Instructions:
+
+Start with the 0603 SMD resistors on the backside of the front PCB!
+
+
+Using Leibniz Subsystem:
+
+there are 9 Jumpers on the front PCB. if you solder these jumpers, the optional connectors for the Leibniz subsystem are bridged and wont be needed anymore. If you want to use the Leibniz subsystem now or in the Future, please make sure you dont solder the jumpers and solder the connectors for the Leibniz subsystem.
+Before soldering the Thonkiconn Jacks (3.5mm mono jacks) make sure to solder the Leibniz Headers first. Make sure the pins of the Leibniz connector is flush with the Frontside of the PCB, that way they dont interfere with the 3.5mm Mono Jacks on the oter side of the PCB.
+
