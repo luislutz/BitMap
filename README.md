@@ -27,8 +27,8 @@ The coolest feature by far is the precise Mapping of the 256 values in 8 Bit to 
 
 ## Different Use Cases:
 
-Voltage Controlled Bitreducing of CV and Audio signals
-Reducing Sample Rate of CV and Audio Signals (S&H)
+- Voltage Controlled Bitreducing of CV and Audio signals
+- Reducing Sample Rate of CV and Audio Signals (S&H)
 Random Voltage and Gate Source
 Sequencing Drums with mutes (up to 9 channels)
 Quantizing of pitch CV (Chromatic and unusal scales)
