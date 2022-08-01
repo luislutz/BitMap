@@ -2,6 +2,20 @@
 Multifunction Eurorack Module with 8 Bit ADC and DAC in the Guts
 
 
+Basic Function:
+
+
+Conversion of analog voltage in 8 Bit digital value
+
+Possibility of swapping individual bits and switching them off manually, 
+aswell as removing the bits in order via the voltage controlled Bitcrush-Knob
+
+Reconversion of digital 8 Bit value in analog voltage
+
+ADC and DAC can be used as completely seperate Units.
+ADC: 1 analog Input, 8 digital bit outputs based on the input voltage (Gates)
+
+
 Different Use Cases:
 
 Voltage Controlled Bitreducing of CV and Audio signals
