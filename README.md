@@ -2,10 +2,10 @@
 Multifunction Eurorack Module with 8 Bit parallel ADC and DAC in the Heart. Main selling points:
 - most versatile Bitcrusher in Eurorack with passive LPF
 - infinite Sample and Hold with slew, works with 1v/oct pitch CV!
-- Chromatic and weird scales (every 2nd, 4th, 8th, 16th) Quantizer
+- Halftone Chromatic, Chromatic and weird scales Quantizer (every 2nd, 4th, 8th, 16th)
 - inspiring Drum/Gate Sequencer with 8 Channels
 - VCA and Ringmodulator
-- 
+- White Noise, 8 types of digital noise and processed White Noise (Bitcrushed, Sample Rate reduced and Filtered to your taste)
 
 ## Features and Functions:
 
