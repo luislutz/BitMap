@@ -1,6 +1,11 @@
 # BitMap
-Multifunction Eurorack Module with 8 Bit parallel ADC and DAC in the Heart
-
+Multifunction Eurorack Module with 8 Bit parallel ADC and DAC in the Heart. Main selling points:
+- most versatile Bitcrusher in Eurorack with passive LPF
+- infinite Sample and Hold with slew, works with 1v/oct pitch CV!
+- Chromatic and weird scales (every 2nd, 4th, 8th, 16th) Quantizer
+- inspiring Drum/Gate Sequencer with 8 Channels
+- VCA and Ringmodulator
+- 
 
 ## Features and Functions:
 
@@ -32,14 +37,15 @@ The coolest feature by far is the precise Mapping of the 256 values in 8 Bit to 
 - Random Voltage and Gate Source
 - Sequencing Drums with mutes (up to 9 channels)
 - Quantizing of pitch CV (Chromatic and unusal scales)
-- VCA and Ringmodulator
+- VCA and Ringmodulator (after AD->DA Conversion on the Output)
 - Sequencer for pitch CV
-- Sequence Transformation
+- infinite Sample and Hold with external trigger
+- Pitch Sequence Transformation to related, but different Sequences
 - Slew and Low pass filtering of output with switchable range (passive)
 - Strange Wavefolder (swapping or switching individula bits of Audio)
 - Distortion (hardclipping at 10vpp)
-- Noise source (9 times digital noise with different rates and one 8 bit white noise) 
-- Compatible with Leibniz system from Xaoc!
+- Noise source (1 unprocessed Noise white noise outoput, 9 times digital noise with different flavours, and one 8 bit white noise processable with Bitmap as you wish) 
+- Compatible with Leibniz system from Xaoc via Leibniz headers on the back of the module!
 
 
 
