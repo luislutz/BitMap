@@ -25,7 +25,7 @@ The coolest feature by far is the precise Mapping of the 256 values in 8 Bit to 
 
 
 
-##Different Use Cases:
+## Different Use Cases:
 
 Voltage Controlled Bitreducing of CV and Audio signals
 Reducing Sample Rate of CV and Audio Signals (S&H)
@@ -45,7 +45,7 @@ Compatible with Leibniz system from Xaoc!
 
 
 
-##Building Instructions:
+## Building Instructions:
 
 This is no easy build! Althought it is mostly throughhole, the Module is really packed with Components and ICs.
 The hardest part is to solder the 0603 SMD Resistors and keep them unharmed during the rest of the soldering
@@ -65,7 +65,7 @@ Solder the panel components with the panel already mounted on them to make sure 
 
 
 
-##Calibraton:
+## Calibraton:
 
 there are 6 calibrating Trimmers in total:
 
