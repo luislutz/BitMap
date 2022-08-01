@@ -4,7 +4,6 @@ Multifunction Eurorack Module with 8 Bit ADC and DAC in the Guts
 
 Basic Function:
 
-
 Conversion of analog voltage in 8 Bit digital value
 
 Possibility of swapping individual bits and switching them off manually, 
@@ -12,8 +11,18 @@ aswell as removing the bits in order via the voltage controlled Bitcrush-Knob
 
 Reconversion of digital 8 Bit value in analog voltage
 
-ADC and DAC can be used as completely seperate Units.
-ADC: 1 analog Input, 8 digital bit outputs based on the input voltage (Gates)
+ADC and DAC can be used as seperate units with the same clock (onboard pulsegenerator or external trigger/gates):
+
+ADC: 1 analog input, 8 digital bit outputs derived from the input voltage (Gates), additional Clip output wich goes high when the input voltage is bigger than the ADC range, this produces hard clipping
+
+DAC: 8 digital inputs (Gates), 1 analog output derived from the digital input values. Possibitlity to set the refence voltage of the DAC externally via an analog gain input, works as a VCA with unipolar Voltage or Ringmodulator with bipolar Voltage
+
+Normalled white noise to the analog input of the ADC aswell as a seperate unprocessed noise output. This gives direct access to 9 flavours of Digital Noise at the ADC Bit outputs and Clip output and a processed white noise at the analog output of the DAC without having to add some other modules or cables. The processed white noise can of course be bitcrushed and samplerate reduced as you wish aswell. with the passive Slew limiter (LPF) at the output the noise can be filtered too.
+
+Because the value of the incoming analog voltage is stored in Digital realm. The module does act as a Sample and Hold circuit with infinite holding time and zero voltage drop. Using this module to sample and hold pitch CV is no problem.
+
+The coolest feature by far is the precise Mapping of the 256 values in 8 Bit to the V/Oct scale at the analog input and output. To set the module up for quantizing Pitch CV, just turn the input and output level knobs all the way up. Now a Voltage of 0 (C3) at the input equals a digital word of 10000000, C#3 would be 10000010, D3 = 10000100, D#3 = 10000110 and so on. one Sem,itone equals two steps in the Digital realm. So the minimum voltage value will be -5.33V (00000000, G#-3) and the maximum voltage is 5.25 (11111110, D#8). The Quantizing range is therefor over 10 Octaves of Notes. There are many possibilities for quantizing pitch cv. For Chromatic quantizing, disable the lowest value bit. if you want everey 2nd, 4th, 8th semitone and so on,disable more bits or make any weird combination of bits to make weird scales that are impossible using a normal quantizer. Normal scales like Major Minor or Phrigyian are not so easy to replicate with this module.
+
 
 
 Different Use Cases:
