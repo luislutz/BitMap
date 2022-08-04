@@ -73,24 +73,24 @@ Solder the panel components with the panel already mounted on them to make sure 
 
 ## Calibraton:
 
-there are 6 calibrating Trimmers in total:
+there are 6 calibrating trimpotentiometers in total:
 
-Noise Level trim: 
+1. Noise Level trim: 
 Trim noise level to taste. Recommendation: turn up the input level Pot and turn down the noise level trim until the Clip led stops lighting up. Then increase a little bit so that it flashes sometimes (makes the input noise about 10 Vpp)
 
-Max Sample Rate trim:
+2. Max Sample Rate trim:
 Feed a Sinewave to the analog input. Turn the Sample rate Pot to max value. Adjust the trimpot to minimal noise on the output (Hint: if the sample rate just exceeds audible range its perfect there)
 
-Input Scale trim:
+3. Input Offset trim:
+Take a voltage source with excactly 0V or GND and plug it in the analog voltage input. Trim the input offset potentiometer so that the LEDs light up with this pattern from left to right: 00000001
+
+4. Input Scale trim:
 
 
-Input Offset trim:
+5. Output Scale trim:
 
 
-Output Scale trim:
-
-
-Output Offset trim:
+6. Output Offset trim:
 
 
 
