@@ -32,8 +32,8 @@ The coolest feature by far is the precise mapping of the 256 steps in 8 Bit to t
 
 ## Different Use Cases:
 
-- Voltage Controlled Bitreducing of CV and Audio signals
-- Reducing Sample Rate of CV and Audio Signals (S&H)
+- Voltage controlled Bitreducing of CV and Audio signals
+- Voltage controlled Reducing of Sample Rate for CV and Audio Signals (S&H)
 - Random Voltage and Gate Source
 - Sequencing Drums with mutes (up to 9 channels)
 - Quantizing of pitch CV (Chromatic and unusal scales)
@@ -82,9 +82,10 @@ Trim noise level to taste. Recommendation: turn up the input level Pot and turn 
 Feed a Sinewave to the analog input. Turn the Sample rate Pot to max value. Adjust the trimpot to minimal noise on the output (Hint: if the sample rate just exceeds audible range its perfect there)
 
 3. Input Offset trim:
-Take a voltage source with excactly 0V or GND and plug it in the analog voltage input. Trim the input offset potentiometer so that the LEDs light up with this pattern from left to right: 00000001
+Take a voltage source with excactly 0V or GND and plug it in the analog voltage input. Trim the input offset potentiometer so that the LEDs light up with this pattern from left to right: 00000001    ---> if you encounter switching of the bits due to noise on the input voltage, this trimpot is the way to minimize this.
 
 4. Input Scale trim:
+Take a voltage source with exactly 5V and plug it in the analog voltage input. Trim the input scale potentiometer so that LEDs light up with this pattern from left to right: 00011111    ---> repeat Step 2. and Step 3. until it stays at the desired with the corresponding input voltage.
 
 
 5. Output Scale trim:
