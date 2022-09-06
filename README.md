@@ -75,23 +75,26 @@ Solder the panel components with the panel already mounted on them to make sure 
 
 there are 6 calibrating trimpotentiometers in total:
 
-1. Noise Level trim: 
-Trim noise level to taste. Recommendation: turn up the input level Pot and turn down the noise level trim until the Clip led stops lighting up. Then increase a little bit so that it flashes sometimes (makes the input noise about 10 Vpp)
 
-2. Max Sample Rate trim:
+
+
+1. Input Offset trim:
+Turn the Input level Potentiometer on the Panel completely to the left first. Turn the Noise Trim Potentiometer completely down, so that there is absolutely no flickering of the Bit LEDS on the Panel. Now youre set for precise calibration. Trim the input offset potentiometer so that the LEDs light up with this pattern from left to right: 00000001
+
+2. Input Scale trim:
+Take a voltage source with exactly 5V and plug it in the analog voltage input. Trim the input scale potentiometer so that LEDs light up with this pattern from left to right: 00011111    ---> repeat Step 1. and Step 2. until it stays at the desired Pattern with the corresponding input voltage.
+
+
+3. Output Scale trim:
+
+
+4. Output Offset trim:
+
+
+5. Max Sample Rate trim:
 Feed a Sinewave to the analog input. Turn the Sample rate Pot to max value. Adjust the trimpot to minimal noise on the output (Hint: if the sample rate just exceeds audible range its perfect there)
 
-3. Input Offset trim:
-Take a voltage source with excactly 0V or GND and plug it in the analog voltage input. Trim the input offset potentiometer so that the LEDs light up with this pattern from left to right: 00000001    ---> if you encounter switching of the bits due to noise on the input voltage, this trimpot is the way to minimize this.
-
-4. Input Scale trim:
-Take a voltage source with exactly 5V and plug it in the analog voltage input. Trim the input scale potentiometer so that LEDs light up with this pattern from left to right: 00011111    ---> repeat Step 2. and Step 3. until it stays at the desired with the corresponding input voltage.
-
-
-5. Output Scale trim:
-
-
-6. Output Offset trim:
-
+6. Noise Level trim: 
+Turn the Input pot again completely to the left. Now turn the Noise trimpot up until there is a slight flickering at the LEDs on the Panel. Turn slightly back so that the flickering stops. Noise level is now set to Max level without interference to the input Voltage. Any higher and the Readings of other Voltages to the Analog Voltage input get inprecise and noisy. For max precision on Pitch CV you can even turn the noise trim completely down :) if your more after noisy behaviour it doesnt matter that much :D
 
 
