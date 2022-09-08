@@ -75,21 +75,31 @@ Solder the panel components with the panel already mounted on them to make sure 
 
 there are 6 calibrating trimpotentiometers in total:
 
+Set Up: 
+- SampleRate Knob ~70% to the right
+- Bitcrush Knob 100% to the left
+- Input Level Knob 100% to the left
+- CV Scale Knob 100% to the left
+- Slew Pot 100% to the left
+- Output Pot 100% to the right
+- All individual Bit Buttons are not pressed!
+
 
 
 
 1. Input Offset trim:
-Turn the Input level Potentiometer on the Panel completely to the left first. Turn the Noise Trim Potentiometer completely down, so that there is absolutely no flickering of the Bit LEDS on the Panel. Now youre set for precise calibration. Trim the input offset potentiometer so that the LEDs light up with this pattern from left to right: 00000001
+Turn the Input level Potentiometer on the Panel completely to the left first. Turn the Noise Trim Potentiometer completely down, so that there is absolutely no flickering of the Bit LEDS on the Panel (This is really important). Now youre set for precise calibration. Trim the Input Offset Trim potentiometer so that the LEDs light up with this pattern from left to right without flickering: 00000001
 
 2. Input Scale trim:
-Take a voltage source with exactly 5V and plug it in the analog voltage input. Trim the input scale potentiometer so that LEDs light up with this pattern from left to right: 00011111    ---> repeat Step 1. and Step 2. until it stays at the desired Pattern with the corresponding input voltage.
+Take a voltage source with exactly 5V (coming from a sequencer or similar) and plug it in the analog voltage input. Turn the Input Voltage Potentiometer on the Frontpanel completely up (100% to the right). Trim the input scale potentiometer so that LEDs light up with this pattern from left to right: 00011111    ---> repeat Step 1. and Step 2. until it stays at the desired Pattern with the corresponding input voltage and no jitter.
 
 
-3. Output Scale trim:
+3. Output Offset trim:
+Keep the 5V source plugged in. Turn the Input Voltage Knob on the Panel to zero again. Connect the output to an Voltage Meter or an Oscillator which is already well calibrated to 1V/Oct. Make sure you see the Pattern 00000001 on the LEDs. Adjust the Output Offset Trim until the Output Voltage equals excactly 0V, or your oscillator doesnt change pitch when unpluuging the cable from the V/Oct input.
 
 
-4. Output Offset trim:
-
+4. Output Scale trim:
+Keep the 5V source plugged in. Turn the Input Voltage Knob on the Panel to max (100% to the right). Leave the Analog Voltage Output connected to the oscillator or the Voltage Meter. Adjust the Output Scale Trim
 
 5. Max Sample Rate trim:
 Feed a Sinewave to the analog input. Turn the Sample rate Pot to max value. Adjust the trimpot to minimal noise on the output (Hint: if the sample rate just exceeds audible range its perfect there)
