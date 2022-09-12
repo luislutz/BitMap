@@ -88,23 +88,22 @@ Set Up:
 
 
 1. Input Offset trim:
-Turn the Input level Potentiometer on the Panel completely to the left first. Turn the Noise Trim Potentiometer completely down, so that there is absolutely no flickering of the Bit LEDS on the Panel (This is really important). Now youre set for precise calibration. Trim the Input Offset Trim potentiometer so that the LEDs light up with this pattern from left to right without flickering: 00000001
+Turn the Input Level Knob on the Panel completely to the left first. Turn the Noise Trim Potentiometer completely down, so that there is absolutely no flickering of the Bit LEDS on the Panel (This is really important). Now youre set for precise calibration. Adjust the Input Offset Trim Potentiometer so that the LEDs light up with this pattern from left to right without flickering: 00000001
 
 2. Input Scale trim:
-Take a voltage source with exactly 5V (coming from a sequencer or similar) and plug it in the analog voltage input. Turn the Input Voltage Potentiometer on the Frontpanel completely up (100% to the right). Trim the input scale potentiometer so that LEDs light up with this pattern from left to right: 00011111    ---> repeat Step 1. and Step 2. until it stays at the desired Pattern with the corresponding input voltage and no jitter.
-
+Take a constant voltage source with exactly 5V (coming from a sequencer or similar) and plug it in the analog voltage input. Turn the Input Level Knob on the Frontpanel completely up (100% to the right). Adjust the Input Scale Trim Potentiometer so that LEDs light up with this pattern from left to right: 00011111    ---> repeat Step 1. and Step 2. until it stays at the correct LED-Pattern with the corresponding input voltage and no jitter.
 
 3. Output Offset trim:
-Keep the 5V source plugged in. Turn the Input Voltage Knob on the Panel to zero again. Connect the output to an Voltage Meter or an Oscillator which is already well calibrated to 1V/Oct. Make sure you see the Pattern 00000001 on the LEDs. Adjust the Output Offset Trim until the Output Voltage equals excactly 0V, or your oscillator doesnt change pitch when unpluuging the cable from the V/Oct input.
-
+Keep the 5V source plugged in. Turn the Input Level Knob on the panel to zero again. Connect the output to a Voltage Meter or to the V/Oct input of an Oscillator that is already well calibrated to 1V/Oct. Make sure you see the Pattern 00000001 on the LEDs. Adjust the Output Offset Trim until the Output Voltage equals excactly 0V, or your oscillator doesnt change pitch when unpluuging the cable from the V/Oct input.
 
 4. Output Scale trim:
-Keep the 5V source plugged in. Turn the Input Voltage Knob on the Panel to max (100% to the right). Leave the Analog Voltage Output connected to the oscillator or the Voltage Meter. Adjust the Output Scale Trim
+Keep the 5V source plugged in. Turn the Input Voltage Knob on the Panel to max (100% to the right). Now the LED-Pattern should be (00011111) again. Leave the Analog Voltage Output connected to the oscillator or the Voltage Meter. Adjust the Output Scale Trim until the output matcehs excactly 5 volts or the Oscillator is playing 5 Octaves above when compared to Step 3.
+--> your Input and Output Scales and Offsets are now set correctly to 1V/Oct
 
 5. Max Sample Rate trim:
-Feed a Sinewave to the analog input. Turn the Sample rate Pot to max value. Adjust the trimpot to minimal noise on the output (Hint: if the sample rate just exceeds audible range its perfect there)
+Feed a Sinewave to the analog input. Listen to the output of the Module. Turn the Sample Rate Knob on the panel to max value (100% to the right). Adjust the Sample Rate Trim to minimal noise on the output (Hint: if the sample rate just exceeds audible range its perfect there). if the Sample Rate trim is set to high. The ADC stalls when turning the SR pot all the way to the Right!
 
 6. Noise Level trim: 
-Turn the Input pot again completely to the left. Now turn the Noise trimpot up until there is a slight flickering at the LEDs on the Panel. Turn slightly back so that the flickering stops. Noise level is now set to Max level without interference to the input Voltage. Any higher and the Readings of other Voltages to the Analog Voltage input get inprecise and noisy. For max precision on Pitch CV you can even turn the noise trim completely down :) if your more after noisy behaviour it doesnt matter that much :D
+Turn the Input Level Knob again completely to the left. Now turn the Noise trimpot up until there is a slight flickering at the LEDs on the Panel. Turn slightly back so that the flickering stops. Noise level is now set to Max Level without interference to the input Voltage. Any higher and the Readings of other Voltages to the Analog Voltage input get inprecise and noisy. For max precision on Pitch CV you can even turn the noise trim completely down :) if your more after noisy behaviour it doesnt matter that much and you can turn up the noise quite abit :D
 
 
