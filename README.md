@@ -82,7 +82,7 @@ Set Up:
 - CV Scale Knob 100% to the left
 - Slew Pot 100% to the left
 - Output Pot 100% to the right
-- All individual Bit Buttons are not pressed!
+- All individual Bit Buttons are not pressed, e.g. Bits are all active!
 
 
 
