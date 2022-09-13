@@ -20,7 +20,7 @@ ADC: 1 analog input, 8 digital bit outputs derived from the input voltage (Gates
 
 DAC: 8 digital inputs (Gates), 1 analog output derived from the digital input values. Possibitlity to set the refence voltage of the DAC externally via an analog gain input, works as a VCA with unipolar Voltage or Ringmodulator with bipolar Voltage
 
-Normalled white noise to the analog input of the ADC aswell as a seperate unprocessed noise output. This gives direct access to 9 flavours of Digital Noise at the ADC Bit outputs and Clip output and a processed white noise at the analog output of the DAC without having to add some other modules or cables. The processed white noise can of course be bitcrushed and samplerate reduced as you wish aswell. with the passive Slew limiter (LPF) at the output the noise can be filtered too.
+Normalled white noise to the analog input of the ADC aswell as a seperate unprocessed noise output. This gives direct access to 9 flavours of Digital Noise at the ADC Bit outputs and Clip output and a processed white noise at the analog output of the DAC without having to add some other modules or cables. The processed white noise can of course be bitcrushed and samplerate reduced as you wish aswell. Random Voltages in S and Hold style are achievable too with really slow clock rate. With the passive Slew limiter (LPF) at the output the noise can be filtered too and it is possible to slew the Sample and Hold Voltages.
 
 Because the value of the incoming analog voltage is stored in Digital realm. The module does act as a Sample and Hold circuit with infinite holding time and zero voltage drop. Using this module to sample and hold pitch CV is no problem.
 
