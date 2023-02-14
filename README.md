@@ -73,7 +73,7 @@ Solder the panel components with the panel already mounted on them to make sure 
 
 ## Calibraton:
 
-there are 6 calibrating trimpotentiometers in total:
+
 
 Set Up: 
 - SampleRate Knob ~70% to the right
@@ -85,25 +85,30 @@ Set Up:
 - All individual Bit Buttons are not pressed, e.g. Bits are all active!
 
 
+there are 6 calibrating trimpotentiometers in total to be adjusted:
 
+1. Input Offset trim RV5 10K:
+Turn the Input Level Knob on the Panel completely to the left first. Listen to the Noise Output Jack. Turn the Noise Trim Potentiometer completely down, so that there is absolutely no Nosie left at the Noise Output Jack. This should result in less flickering of the Bit LEDS on the Panel (This is really important). Now youre set for precise calibration. Adjust the Input Offset Trim Potentiometer so that the LEDs light up with this pattern from left to right without flickering: 00000001 (EG Only BIT8 is set active)
 
-1. Input Offset trim:
-Turn the Input Level Knob on the Panel completely to the left first. Turn the Noise Trim Potentiometer completely down, so that there is absolutely no flickering of the Bit LEDS on the Panel (This is really important). Now youre set for precise calibration. Adjust the Input Offset Trim Potentiometer so that the LEDs light up with this pattern from left to right without flickering: 00000001
-
-2. Input Scale trim:
+2. Input Scale trim RV4 10K:
 Take a constant voltage source with exactly 5V (coming from a sequencer or similar) and plug it in the analog voltage input. Turn the Input Level Knob on the Frontpanel completely up (100% to the right). Adjust the Input Scale Trim Potentiometer so that LEDs light up with this pattern from left to right: 00011111    ---> repeat Step 1. and Step 2. until it stays at the correct LED-Pattern with the corresponding input voltage and no jitter.
 
-3. Output Offset trim:
-Keep the 5V source plugged in. Turn the Input Level Knob on the panel to zero again. Connect the output to a Voltage Meter or to the V/Oct input of an Oscillator that is already well calibrated to 1V/Oct. Make sure you see the Pattern 00000001 on the LEDs. Adjust the Output Offset Trim until the Output Voltage equals excactly 0V, or your oscillator doesnt change pitch when unpluuging the cable from the V/Oct input.
+3. Output Offset trim RV6 2K:
+Keep the precise 5V source plugged in. Turn the Input Level Knob on the panel to zero again. Connect the output to a Voltage Meter or to the V/Oct input of an Oscillator that is already well calibrated to 1V/Oct. Make sure you see the Pattern 00000001 on the LEDs. Adjust the Output Offset Trim until the Output Voltage equals excactly 0V or your oscillator doesnt change pitch when unpluuging the cable from the V/Oct input (should be the case for a good calibrated VCO with 0V at the cable)
 
-4. Output Scale trim:
-Keep the 5V source plugged in. Turn the Input Voltage Knob on the Panel to max (100% to the right). Now the LED-Pattern should be (00011111) again. Leave the Analog Voltage Output connected to the oscillator or the Voltage Meter. Adjust the Output Scale Trim until the output matcehs excactly 5 volts or the Oscillator is playing 5 Octaves above when compared to Step 3.
+4. Output Scale trim RV9 2K:
+Keep the precise 5V source plugged in. Turn the Input Voltage Knob on the Panel to max (100% to the right). Now the LED-Pattern should be (00011111) again. Leave the Analog Voltage Output connected to the oscillator or the Voltage Meter. Adjust the Output Scale Trim until the output matcehs excactly 5 volts or the Oscillator is playing 5 Octaves above when compared to Step 3.
 --> your Input and Output Scales and Offsets are now set correctly to 1V/Oct
 
-5. Max Sample Rate trim:
-Feed a Sinewave to the analog input. Listen to the output of the Module. Turn the Sample Rate Knob on the panel to max value (100% to the right). Adjust the Sample Rate Trim to minimal noise on the output (Hint: if the sample rate just exceeds audible range its perfect there). if the Sample Rate trim is set to high. The ADC stalls when turning the SR pot all the way to the Right!
+5. Max Sample Rate trim RV12 2K:
+Feed a Sinewave into the analog input Jack. Listen to the output of the Module. Turn the Sample Rate Knob on the panel to max value (100% to the right). Adjust the Sample Rate Trim to minimal noise on the output (Hint: if the sample rate just exceeds audible range its perfect there). if the Sample Rate trim is set to high. The ADC stalls when turning the SR pot all the way to the Right, you can unstall the ADC by turning it quite down, but its better to set that trimmer in a way that the ADC doest lock at all when the Sample Rate Pot is at its max Setting (100% to the right)
 
-6. Noise Level trim: 
-Turn the Input Level Knob again completely to the left. Now turn the Noise trimpot up until there is a slight flickering at the LEDs on the Panel. Turn slightly back so that the flickering stops. Noise level is now set to Max Level without interference to the input Voltage. Any higher and the Readings of other Voltages to the Analog Voltage input get inprecise and noisy. For max precision on Pitch CV you can even turn the noise trim completely down :) if your more after noisy behaviour it doesnt matter that much and you can turn up the noise quite abit :D
+6. Noise Level trim RV3 100K: 
+Turn the Input Level Knob again completely to the left. Now turn the Noise trimpot up until there is a slight flickering at the LEDs on the Panel (because the dac is very quickly switching States because of increased signal noise at the input). Turn it slightly back so that the flickering stops. Noise level is now set to Max Level without interference to the input Voltage. Any higher and the Readings of Voltages to the Analog Voltage input get inprecise and noisy. For max precision on Pitch CV you can even turn the noise trim completely down :) if your more after noisy behaviour it doesnt matter that much and you can turn up the noise quite abit :D
 
 
+
+
+if you have any questions regarding the building or calibration Process you can write me an email to luis.lutz95@gmail.com 
+
+Thanks for thaking the challenge to build one of these!!!
